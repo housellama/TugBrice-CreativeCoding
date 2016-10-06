@@ -1,0 +1,14 @@
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+}
+
+function draw() {
+  colorMode(HSB, 360,100,100);
+  
+  background(45,mouseX,100);
+  
+  rectMode(CENTER);
+  noStroke();
+  fill(180,100,mouseY);
+  rect(width/2,height/2,400,400);
+}
