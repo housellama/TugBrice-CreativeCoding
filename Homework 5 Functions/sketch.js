@@ -1,3 +1,6 @@
+//Kevin's comments:
+//you've got some good stuff in here.  I'd like to see you go further!  What if you added a mousePressed() function
+//to handle when a user presses the mouse, which changes the arm (left -> right, vice versa) waving.
 function setup() {
   createCanvas(windowWidth,windowHeight);
   stickFigure(6);
@@ -10,6 +13,8 @@ function draw() {
   stickFigure(x);
 }
 var x = 2;
+//consider a more descriptive parameter name than x.  A reader of this code should be able to know what this function
+//does by looking at the function head alone.  Also, consider adding parameters for stick figure scale or color
 function stickFigure(x){
   stroke('black');
   strokeWeight(2);
